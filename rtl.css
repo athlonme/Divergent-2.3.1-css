@@ -1,0 +1,445 @@
+/* ---------------------- 
+Stylesheet Guide
+-------------------------
+
+FONTS
+GENERAL STYLES
+FORMS
+LOADING ANIMATION
+PAGE STRUCTURE
+MAIN MENU
+SIDEBAR
+SIDEBAR DROPDOWN MENU
+SUBMENU
+TOOLTIPS
+RESPONSIVE IFRAME
+BLOG
+COMMENTS
+FOOTER
+TRANSPARENT COLORS
+WORDPRESS
+MEDIA
+
+*/
+
+/* ================= GENERAL STYLES ================== */
+
+h1.border:after,
+h2.border:after,
+h3.border:after,
+h4.border:after,
+h5.border:after,
+h6.border:after {
+    right: 0px;
+    left: inherit;
+}
+
+dd {
+    margin: 0 0px 0 40px;
+}
+
+menu,
+ol,
+ul {
+    padding: 0 0px 0 40px;
+}
+
+legend {
+    *margin-left: -7px;
+    *margin-right: 0px;
+    /* 3 */
+}
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+caption,
+th,
+td {
+    text-align: right;
+}
+
+.wpcf7-form {
+    text-align: right;
+}
+
+.label {
+    border-left: none !important;
+}
+
+blockquote:before {
+    right: inherit;
+    left: -10px;
+}
+
+blockquote .cite {
+    text-align: right;
+}
+
+/* ================= HOMEPAGE ================== */
+
+#home-title h1 {
+    text-align: right;
+}
+
+/* ================= BLOG ================== */
+
+.page-date {
+    padding-left: 25px;
+    padding-right: 0px;
+}
+
+.page-date:before {
+    right: inherit;
+    left: 0px;
+}
+
+.blogpager .previous {
+    float: left;
+}
+
+.blogpager .next {
+    float: right;
+}
+
+.postdate > div:first-of-type {
+    margin-left: 0px;
+    margin-right: 15px;
+}
+
+.blogcontainer .postdate .fa {
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+.blogcontainer .blog-img,.blog-divider {
+    margin-right:0px;
+    margin-left: 60px;
+}
+
+/* ================= COMMENTS ================== */
+
+.comments_content:before {
+    left: 30px;
+    right: inherit;
+}
+
+.comments_block .children li {
+    padding-right: 0px;
+    padding-left: 50px;
+}
+
+.comments_block .children li:before {
+    right: inherit;
+    left: 15px;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+/* ================= FOOTER ================== */
+
+.cv-credits {
+    text-align: left;
+}
+
+/* ================= TRANSPARENT COLORS ================== */
+
+.cv-box.cv-light,
+.blogmetadata {
+    border-right: none;
+    border-left: 5px solid rgba(0, 0, 0, 0.05);
+}
+
+.cv-box.cv-dark {
+    border-right: none;
+    border-left: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+.cv-box.cv-red {
+    border-right: none;
+    border-left: 5px solid rgba(0, 0, 0, 0.05);
+}
+
+.widget_nav_menu .menu-main-menu-container ul ul {
+    border-right: none;
+    border-left: 3px solid rgba(255, 255, 255, 0.05);
+}
+
+.cv-submenu ul ul {
+    border-right: none;
+    border-left: 3px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ================= DROPDOWN MENUS ================== */
+
+.cv-submenu ul > li > a.cvdropdown,
+.cv-submenu ul > li > a.cvdropdown2,
+.widget_nav_menu .menu-main-menu-container ul > li > a.cvdropdown,
+.widget_nav_menu .menu-main-menu-container ul > li > a.cvdropdown2 {
+    background-position: 0% 65%;
+    padding-right: 50px;
+    padding-left: 0px;
+}
+
+.cv-submenu ul ul,
+.widget_nav_menu .menu-main-menu-container ul ul {
+    border-right: none;
+    padding: 0px 0px 0px 15px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* ================= TABS ================== */
+
+.resp-tabs-list li {
+    float: left;
+}
+
+.resp-vtabs ul.resp-tabs-list {
+    float: left;
+}
+
+.resp-vtabs .resp-tabs-container {
+    float: left;
+}
+
+.resp-arrow {
+    float: right;
+}
+
+.resp-vtabs .resp-tabs-list li:hover,
+.resp-vtabs .resp-tabs-list li.resp-tab-active {
+    border-left: none !important;
+}
+
+/* ================= FORMS ================== */
+
+.searchbox input[type="text"].searchtext {
+    float: right;
+}
+
+.searchbox .button {
+    float: left;
+    margin-right: -1px;
+    margin-left: 0px;
+}
+
+div.wpcf7-mail-sent-ok,
+div.wpcf7-mail-sent-ng,
+div.wpcf7-spam-blocked,
+div.wpcf7-validation-errors {
+    border-width: 0px 3px 0px 0px !important;
+}
+
+input[type="submit"] {
+    float: right;
+}
+
+/* ================= PORTFOLIO ================== */
+
+.cvfilters li {
+    float: left;
+}
+
+/* ================= WIDGETS ================== */
+
+.cv-sidebar-title:before {
+    left: 40px;
+    right: inherit;
+}
+
+.widget_recent_entries ul li,
+.widget_categories ul li,
+.widget_recent_comments ul li,
+.widget_pages ul li,
+.widget_meta ul li,
+.widget_archive ul li,
+.widget_rss ul li,
+.widget_recent-posts ul li,
+.recentcomments {
+    padding-right: 0px;
+}
+
+.tagcloud a {
+    float: right;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+#wp-calendar caption {
+    text-align: left;
+}
+
+#wp-calendar thead th {
+    text-align: center;
+}
+
+#wp-calendar tfoot #next {
+    text-align: left;
+}
+
+.cv-sidebar-posts-img {
+    left: inherit;
+    right: 0px;
+}
+
+.cv-sidebar-posts li {
+    padding: 0px 90px 20px 0px;
+}
+
+/* ================= FLICKR  ================== */
+
+.cv-flickr-box li {
+    float: right;
+    padding: 0px 0px 5px 5px;
+    margin-right: 0px;
+}
+
+.cv-flickr-box li:last-child {
+    margin-left: 0px;
+}
+
+/* ================= BW TABLE ================== */
+
+.cv-table-left {
+    float: right;
+}
+
+.cv-table-right {
+    float: left;
+}
+
+.cv-table .cv-table-title a {
+    padding-right: 24px;
+    padding-left: 0px;
+    background-position: right center;
+}
+
+/* ================= ACCORDION ================== */
+
+.accordion-header {
+    padding-right: 0px;
+}
+
+.accordion-header:after {
+    left: 0px;
+    right: inherit;
+}
+
+.cv-icon {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+/* ================= ICON CONTAINERS ================== */
+
+.cv-icon-block {
+    float: right;
+}
+
+/* ================= SKILLS ================== */
+
+.skillbar-title {
+    right: 0;
+    left: inherit;
+}
+
+.skill-bar-percent {
+    left: 15px;
+    right: inherit;
+}
+
+/* ================= TESTIMONIALS ================== */
+
+.quovolve-nav span {
+    float: left;
+}
+
+.nav-numbers {
+    float: right;
+    padding: 0px;
+}
+/* ============== my athlonme css ======================*/
+/* ================= MAIN MENU ================== */
+
+#cv-menu {
+    right: 0;
+	left: unset;
+}
+#cv-main-menu ul li a:before {
+    right: 0;
+	left: unset;
+}
+/* ================= SIDEBAR ================== */
+#cv-sidebar {
+    right: 5em;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+/* ================= PAGE STRUCTURE ================== */
+.cv-left-slider {
+	left: 0;
+}
+#footer {
+    right: 5em;
+}
+.floor {
+    padding-right: calc(3% + 2.3em);
+	padding-left: calc(45% + 2.0em);
+}
+
+/* ================= MEDIA ================== */
+
+@media only screen and (min-width: 1400px) {
+    .blogcontainer .blog-img,.blog-divider {
+        margin-left: 0;
+        margin-right: 80px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .floor {
+        padding-right: 5em;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .cv-table-right,
+    .cv-table-left {
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .cv-sidebar-posts li {
+        padding-right: 0px;
+    }
+    .blogpager .previous,
+    .blogpager .next {
+        float: right;
+    }
+    .blogcontainer .blog-img,.blog-divider {
+        margin-left: 0;
+        margin-right: 0;
+    }
+	.floor {
+        padding-right: 3.5em;
+        padding-left: 0;
+    }
+	#cv-sidebar {
+	right: 3.5em;
+	max-width: calc(100% - 3.5em);
+	}
+	#footer {
+    right: 3.5em;
+	}
+}
